@@ -1,0 +1,90 @@
+.banner {
+  background: map-get($colors, black1);
+  padding: 1rem 0;
+}
+
+.black-bg {
+  background: map-get($colors, black1);
+}
+
+.btn {
+  font-family: $font3;
+  font-size: map-get($font-size, sm);
+  font-weight: map-get($font-weight, med);
+  line-height: map-get($line-height, sm-med);
+  border-radius: 4px;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  background: map-get($colors, card-bg);
+  color: map-get($colors, grey-text);
+  border: 2px solid map-get($colors, box-border);
+  box-shadow: 0px 10px 4px map-get($colors, black1);
+  margin-bottom: map-get($line-height, xl2-large);
+}
+
+.btn:hover {
+  transform: translateY(10px);
+  transition: 500ms ease-in;
+  box-shadow: none;
+  color: map-get($colors, black1);
+}
+
+.card-title {
+  font-family: $font3;
+  font-size: map-get($font-size, med);
+  font-weight: map-get($font-weight, med);
+  line-height: map-get($line-height, med);
+  margin-top: 0;
+}
+
+.card-list {
+  padding: 0;
+}
+
+.card-list-item {
+  text-align: start;
+  font-family: $font2;
+  font-size: map-get($font-size, reg);
+  font-weight: map-get($font-weight, bld);
+  line-height: map-get($line-height, med);
+}
+
+.card-overlay {
+  color: map-get($colors, grey-text);
+  background: map-get($colors, card-overlay);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-title {
+  letter-spacing: 1px;
+  font-family: $font3;
+  font-size: map-get($font-size, md-lg);
+  font-weight: map-get($font-weight, lg);
+}
+
+.img-container {
+  position: relative;
+}
+
+.text {
+  font-family: $font2;
+  font-size: map-get($font-size, sm-med);
+  font-weight: map-get($font-weight, reg);
+  line-height: map-get($line-height, md-lg);
+}
+
+.icon {
+  width: 2.5rem;
+  height: auto;
+}
+
+.line {
+  height: 6px;
+  width: 35px;
+}

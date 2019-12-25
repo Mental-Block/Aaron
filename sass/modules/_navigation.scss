@@ -1,0 +1,87 @@
+#navbar {
+  .header-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    width: 1920px;
+    max-width: 100%;
+    height: 80px;
+    background-color: map-get($colors, black75);
+  }
+
+  .header-container-active {
+    background-color: map-get($colors, black1);
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .nav-list {
+    box-shadow: 0px 3px 5px map-get($colors, black1);
+    padding: 1rem 0;
+    background: map-get($colors, black75);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    transform: translateY(-500px);
+  }
+
+  .nav-list-active {
+    transform: translateY(0px);
+  }
+
+  .nav-list-active-add {
+    background: map-get($colors, black1);
+  }
+
+  .nav-list-link {
+    box-shadow: 1px 4px 5px map-get($colors, black1);
+    position: relative;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    padding: 0.8em 0 0.5em 0;
+    margin: 0.8rem;
+    background: rgb(20, 20, 20);
+    width: 304px;
+    display: block;
+    font-family: $font1;
+    color: map-get($colors, nav-links);
+    font-size: map-get($font-size, xl-small);
+  }
+
+  .icon {
+    margin: 0.5em 0;
+    position: relative;
+    top: 0;
+    left: 10px;
+  }
+
+  .active {
+    color: map-get($colors, green1);
+  }
+
+  .nav-list-link:hover {
+    @extend .active;
+    transition: 250ms ease-in;
+  }
+
+  .burger {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  .line {
+    margin: 7px;
+    border-radius: 40px;
+    background-color: map-get($colors, nav-links);
+  }
+}

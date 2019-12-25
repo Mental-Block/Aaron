@@ -1,0 +1,51 @@
+$font1: "Press Start 2P", cursive;
+$font2: "Nunito Sans", sans-serif;
+$font3: "Noto Serif", serif;
+
+$font-weight: (
+  reg: 400,
+  med: 600,
+  bld: 800
+);
+
+$font-size: (
+  xl-small: 0.8rem,
+  sm: 1rem,
+  sm-sm-med: 1.15rem,
+  sm-med: 1.25rem,
+  med: 1.5rem,
+  md-lg: 1.75rem,
+  lg: 2rem,
+  lg-lg: 2.25rem,
+  xl-large: 2.5rem,
+  xl2-large: 3rem,
+  xl3-large: 4rem
+);
+
+$line-height: (
+  xl-small: 1rem,
+  sm: 1.25rem,
+  sm-med: 1.5rem,
+  med: 1.75rem,
+  md-lg: 2rem,
+  lg: 2.25rem,
+  xl-large: 2.5rem,
+  xl2-large: 2.75rem
+);
+
+$colors: (
+  red1: #ff0000,
+  green1: #246e0d,
+  black1: #000000,
+  white1: #e7e7e7,
+  nav-links: #ffffff,
+  grey-text: #312d2d,
+  black-bg: #171717,
+  card-bg: #e2dcdc,
+  card-overlay: #e3dddd85,
+  tech-card: #0b0b0b,
+  box-border: #bfb8b8,
+  black25: #00000041,
+  black50: #00000075,
+  black75: #000000b4
+);

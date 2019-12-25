@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
+  background: map-get($colors, tech-card);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+::placeholder {
+  color: map-get($colors, grey-text);
+}
+
+#fix,
+#fix1,
+#fix2,
+#fix3 {
+  position: relative;
+}
+
+#fix a,
+#fix1 a,
+#fix2 a,
+#fix3 a {
+  position: absolute;
+  top: -80px;
+}

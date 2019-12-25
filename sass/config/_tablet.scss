@@ -1,0 +1,51 @@
+#landing {
+  .sub-header {
+    font-size: map-get($font-size, med);
+  }
+  .main-header {
+    font-size: map-get($font-size, lg-lg);
+  }
+  .btn {
+    font-size: map-get($font-size, sm-sm-med);
+  }
+}
+
+#about {
+  .banner {
+    padding-bottom: 0;
+  }
+
+  .img-container {
+    float: left;
+    padding: 2.3rem 1.7rem 0 2rem;
+  }
+
+  .text {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+#featured-projects {
+  .featured-bg {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .video1 {
+    height: auto;
+    max-width: 80%;
+    background: map-get($colors, black25);
+  }
+
+  .video-box-x {
+    margin: 2rem;
+  }
+}
+
+#tech {
+  .tech-bg {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}

@@ -1,0 +1,40 @@
+#about {
+  .about-bg {
+    background: map-get($colors, black1);
+  }
+  .banner {
+    color: map-get($colors, white1);
+    padding: 2rem;
+  }
+
+  .header-title,
+  .text {
+    margin: 0;
+  }
+
+  .header-title,
+  .code-symbol,
+  .text,
+  .img-container {
+    display: inline-block;
+  }
+
+  .code-symbol {
+    margin-right: 4px;
+    width: 2.5rem;
+    height: 1.5rem;
+    background: url(/images/codesymbol.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .text,
+  .img-container {
+    max-width: 500px;
+  }
+
+  .text {
+    padding: 2rem;
+    color: map-get($colors, white1);
+    text-align: left;
+  }
+}

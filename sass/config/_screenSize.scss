@@ -1,0 +1,12 @@
+/*mobile */
+@import "./mobile";
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  @import "./tablet";
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  @import "./_desktop";
+}
