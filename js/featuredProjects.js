@@ -46,9 +46,10 @@ const bigVideoPlayer = (cardNumber, videoNumber, link) => {
     line2.classList.add("line", "line2");
     video1.classList.add("video1");
     source.setAttribute("type", "video/mp4");
+
     source.setAttribute("src", videoNumber);
-    button.classList.add("btn");
     a.setAttribute("href", link);
+    button.classList.add("btn");
     a.setAttribute("target", "_blank");
 
     document.getElementById("featured-projects").appendChild(videoBox);
@@ -65,9 +66,9 @@ const bigVideoPlayer = (cardNumber, videoNumber, link) => {
     video1.controls = true;
     video1.muted = true;
 
-    videoBoxX.addEventListener("click", () => {
-      videoBox.parentNode.removeChild(videoBox);
-    });
+    videoBoxX.addEventListener("click", () =>
+      videoBox.parentNode.removeChild(videoBox)
+    );
   });
 };
 
@@ -80,7 +81,7 @@ bigVideoPlayer(4, V[4], L[4]);
 bigVideoPlayer(5, V[5], L[5]);
 */
 
-// Don't reference actual V[]; as its already in the html
+// Don't reference actual V[]; as video is already in the html
 videoHover(0, 0);
 
 /*

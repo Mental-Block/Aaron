@@ -1,39 +1,24 @@
 const navList = document.querySelector(".nav-list");
 const navListLink = document.querySelectorAll(".nav-list-link");
+
+const landing = document.getElementById("landing");
 const about = document.getElementById("about");
 const featuredProjects = document.getElementById("featured-projects");
 const tech = document.getElementById("tech");
 const contact = document.getElementById("contact");
-const burger = document.querySelector(".burger");
-const headerContainer = document.querySelector(".header-container");
-const landing = document.getElementById("landing");
-
-function topOfEachSection(topOfSection) {
-  let a = topOfSection.getBoundingClientRect();
-  topOfSection = a.top;
-  return topOfSection;
-}
-
-function bottomOfEachSection(bottomOfSection) {
-  let b = bottomOfSection.getBoundingClientRect();
-  bottomOfSection = b.bottom;
-  return bottomOfSection;
-}
 
 const navbarListAppear = () => {
+  const burger = document.querySelector(".burger");
   burger.addEventListener("click", () => {
     navList.classList.toggle("nav-list-active");
   });
 };
 
-const navbarBgColorChange = () => {
-  /* Couldn't use this for all navigation links color change on scrolling as it is 
-relative to the users viewport and not per section of the document, also better for 
-navbar toggles of the class */
-  //Home navigation is done here
+const navbarHeaderColorChange = () => {
+  const headerContainer = document.querySelector(".header-container");
 
   const options = {
-    rootMargin: "-101px 0px 0px 0px"
+    rootMargin: "-100px 0px 0px 0px"
   };
 
   const landingSection = new IntersectionObserver(function(
@@ -47,12 +32,6 @@ navbar toggles of the class */
       } else {
         headerContainer.classList.remove("header-container-active");
         navList.classList.remove("nav-list-active-add");
-      }
-
-      if (entry.isIntersecting) {
-        navListLink[0].classList.add("active");
-      } else {
-        navListLink[0].classList.remove("active");
       }
     });
   },
@@ -81,45 +60,40 @@ const navbarLiColorChangeOnClick = () => {
 };
 
 const navbarLiColorChangeOnScroll = () => {
-  let navbarMargin = 100;
+  let margin = 100;
+
+  function topOfEachSection(topOfSection) {
+    let a = topOfSection.getBoundingClientRect();
+    topOfSection = a.top;
+    return topOfSection;
+  }
+
+  function bottomOfEachSection(bottomOfSection) {
+    let b = bottomOfSection.getBoundingClientRect();
+    bottomOfSection = b.bottom;
+    return bottomOfSection;
+  }
 
   window.addEventListener("scroll", () => {
-    if (
-      topOfEachSection(about) > navbarMargin ||
-      bottomOfEachSection(about) < navbarMargin
-    ) {
-      navListLink[1].classList.remove("active");
-    } else {
-      navListLink[1].classList.add("active");
+    function InEachSection(section, margin, i) {
+      if (
+        topOfEachSection(section) > margin ||
+        bottomOfEachSection(section) < margin
+      ) {
+        navListLink[i].classList.remove("active");
+      } else {
+        navListLink[i].classList.add("active");
+      }
     }
-
-    if (
-      topOfEachSection(featuredProjects) > navbarMargin ||
-      bottomOfEachSection(featuredProjects) < navbarMargin
-    ) {
-      navListLink[2].classList.remove("active");
-    } else {
-      navListLink[2].classList.add("active");
-    }
-
-    if (
-      topOfEachSection(tech) > navbarMargin ||
-      bottomOfEachSection(tech) < navbarMargin
-    ) {
-      navListLink[3].classList.remove("active");
-    } else {
-      navListLink[3].classList.add("active");
-    }
-
-    if (topOfEachSection(contact) > navbarMargin) {
-      navListLink[4].classList.remove("active");
-    } else {
-      navListLink[4].classList.add("active");
-    }
+    InEachSection(landing, margin, 0);
+    InEachSection(about, margin, 1);
+    InEachSection(featuredProjects, margin, 2);
+    InEachSection(tech, margin, 3);
+    InEachSection(contact, margin, 4);
   });
 };
 
 navbarListAppear();
-navbarBgColorChange();
+navbarHeaderColorChange();
 navbarLiColorChangeOnClick();
 navbarLiColorChangeOnScroll();
