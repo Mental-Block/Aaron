@@ -18,7 +18,7 @@ const navbarHeaderColorChange = () => {
   const headerContainer = document.querySelector(".header-container");
 
   const options = {
-    rootMargin: "-100px 0px 0px 0px"
+    rootMargin: "-101px 0px 0px 0px"
   };
 
   const landingSection = new IntersectionObserver(function(
