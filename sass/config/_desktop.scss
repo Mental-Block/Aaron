@@ -39,27 +39,24 @@
 }
 
 #about {
-  .about-bg {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template:
-      "photo banner banner"
-      "photo about about";
-  }
+  .about-group {
+    display: flex;
 
-  .banner {
-    grid-area: banner;
-  }
+    .img-container {
+      float: none;
+      height: auto;
+      padding-right: 0;
+      padding-bottom: 2rem;
+    }
 
-  .img-container {
-    float: none;
-    grid-area: photo;
-    padding: 0;
-  }
-
-  .black-bg {
-    grid-area: about;
+    .black-bg {
+      width: 80%;
+      .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 }
 

@@ -7,6 +7,10 @@
     padding: 2rem;
   }
 
+  .img-container {
+    max-width: 100%;
+  }
+
   .header-title,
   .text {
     margin: 0;
@@ -27,7 +31,10 @@
     background-size: contain;
   }
 
-  .text,
+  .text {
+    max-width: 500px;
+  }
+
   .img-container {
     max-width: 500px;
   }

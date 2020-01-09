@@ -18,7 +18,7 @@ const navbarHeaderColorChange = () => {
   const headerContainer = document.querySelector(".header-container");
 
   const options = {
-    rootMargin: "-101px 0px 0px 0px"
+    rootMargin: "-100px 0px 0px 0px"
   };
 
   const landingSection = new IntersectionObserver(function(
@@ -60,7 +60,7 @@ const navbarLiColorChangeOnClick = () => {
 };
 
 const navbarLiColorChangeOnScroll = () => {
-  let margin = 100;
+  let margin = 99;
 
   function topOfEachSection(topOfSection) {
     let a = topOfSection.getBoundingClientRect();

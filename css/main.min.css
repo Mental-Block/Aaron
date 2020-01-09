@@ -195,13 +195,17 @@ img { width: 100%; height: 100%; }
 
 #about .banner { color: #e7e7e7; padding: 2rem; }
 
+#about .img-container { max-width: 100%; }
+
 #about .header-title, #about .text { margin: 0; }
 
 #about .header-title, #about .code-symbol, #about .text, #about .img-container { display: inline-block; }
 
 #about .code-symbol { margin-right: 4px; width: 2.5rem; height: 1.5rem; background: url(/images/codesymbol.svg) no-repeat; background-size: contain; }
 
-#about .text, #about .img-container { max-width: 500px; }
+#about .text { max-width: 500px; }
+
+#about .img-container { max-width: 500px; }
 
 #about .text { padding: 2rem; color: #e7e7e7; text-align: left; }
 
@@ -291,10 +295,10 @@ img { width: 100%; height: 100%; }
   #navbar .navigation { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
   #navbar .nav-list { margin: 0; position: static; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-transform: translateY(0); transform: translateY(0); width: 560px; background: none; -webkit-box-shadow: none; box-shadow: none; }
   #navbar .nav-list-link { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-transform: translateY(0); transform: translateY(0); width: auto; padding: 0; margin: 0; -webkit-box-shadow: none; box-shadow: none; position: static; background: none; }
-  #about .about-bg { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -ms-grid-rows: (1fr)[2]; grid-template-rows: repeat(2, 1fr); grid-template: "photo banner banner" "photo about about"; }
-  #about .banner { grid-area: banner; }
-  #about .img-container { float: none; grid-area: photo; padding: 0; }
-  #about .black-bg { grid-area: about; }
+  #about .about-group { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  #about .about-group .img-container { float: none; height: auto; padding-right: 0; padding-bottom: 2rem; }
+  #about .about-group .black-bg { width: 80%; }
+  #about .about-group .black-bg .text { position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
   #featured-projects .featured-bg { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -ms-grid-rows: (1fr)[2]; grid-template-rows: repeat(2, 1fr); }
   #featured-projects .video1 { height: auto; max-width: 65%; background: #00000041; }
   #tech .tech-bg { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); -ms-grid-rows: (auto)[1]; grid-template-rows: repeat(1, auto); }
