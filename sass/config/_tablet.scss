@@ -32,9 +32,9 @@
     grid-template-rows: repeat(3, auto);
   }
 
-  .video1 {
-    height: auto;
-    max-width: 80%;
+  .iframe {
+    height: 340px;
+    width: 80%;
     background: map-get($colors, black25);
   }
 

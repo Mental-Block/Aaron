@@ -66,10 +66,9 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .video1 {
-    height: auto;
+  .iframe {
+    height: 400px;
     max-width: 65%;
-    background: map-get($colors, black25);
   }
 }
 
