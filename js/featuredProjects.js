@@ -3,7 +3,7 @@ const card = document.querySelectorAll(".featured-bg .card");
 //videos
 let V = [];
 V[0] = "https://www.youtube.com/embed/KaaedNZTUos";
-V[1] = "";
+V[1] = "https://www.youtube.com/embed/HiMUT-RQZCQ";
 V[2] = "";
 V[3] = "";
 V[4] = "";
@@ -12,7 +12,7 @@ V[5] = "";
 //links to github
 let L = [];
 L[0] = "https://github.com/Mental-Block/John-Doe-Masonry";
-L[1] = "";
+L[1] = "https://github.com/Mental-Block/Tetris";
 L[2] = "";
 L[3] = "";
 L[4] = "";
@@ -21,7 +21,7 @@ L[5] = "";
 //live preview
 let P = [];
 P[0] = "https://johndoemasonry.netlify.com";
-P[1] = "";
+P[1] = "https://tetris100.netlify.com/";
 P[2] = "";
 P[3] = "";
 P[4] = "";
@@ -88,8 +88,8 @@ const bigVideoPlayer = (cardNumber, videoNumber, linkNumber, siteNumber) => {
 };
 
 bigVideoPlayer(0, V[0], L[0], P[0]);
+bigVideoPlayer(1, V[1], L[1], P[1]);
 /*
-bigVideoPlayer(1, V[1], L[1]);
 bigVideoPlayer(2, V[2], L[2]);
 bigVideoPlayer(3, V[3], L[3]);
 bigVideoPlayer(4, V[4], L[4]);

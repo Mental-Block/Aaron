@@ -16,6 +16,13 @@
     background-size: contain;
   }
 
+  .watermark-tetris {
+    @include watermark;
+    background: url(/images/tetris.png) no-repeat center center;
+    background-size: contain;
+    width: 70%;
+  }
+
   .red {
     color: map-get($colors, red1);
   }

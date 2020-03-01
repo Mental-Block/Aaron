@@ -48,13 +48,13 @@ const navbarLiColorChangeOnClick = () => {
       let itemZero = item[0];
 
       while (itemZero) {
-        if (itemZero.tagName == "A") {
-          itemZero.classList.remove("active");
+        if (itemZero.tagName == "BUTTON") {
+          itemZero.classList.remove("active-color");
         }
         itemZero = itemZero.nextSibling;
       }
 
-      this.classList.add("active");
+      this.classList.add("active-color");
     });
   }
 };
