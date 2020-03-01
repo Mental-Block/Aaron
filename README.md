@@ -1,6 +1,3 @@
 # Aarons Portfolio
 
-html
-js
-css
-sass
+Includes my main projects that I wish to display
