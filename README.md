@@ -1,3 +1,3 @@
 # Aarons Portfolio
 
-Includes my main projects that I wish to display
+Includes the projects that I want to display.
